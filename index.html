@@ -6,14 +6,16 @@
 </head>
 <body>
 
-<header></header>
+<header class="page-header">
+	<h1>Tetra Master</h1>
+</header>
 
 <main class="layout__container">
 
-	<div class="layout__row">
-		<div class="layout__col">
-		
-			<div class="play-card" draggable="true">
+
+		<div class="layout__player">
+
+			<div class="play-card" draggable="true" ondragstart="console.log(1)">
 				<div class="play-card__attack-triangle play-card__attack-triangle--top-left"></div>
 				<div class="play-card__attack-triangle play-card__attack-triangle--top"></div>
 				<div class="play-card__attack-triangle play-card__attack-triangle--top-right"></div>
@@ -22,27 +24,137 @@
 				<div class="play-card__attack-triangle play-card__attack-triangle--bottom"></div>
 				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-left"></div>
 				<div class="play-card__attack-triangle play-card__attack-triangle--left"></div>
-				<div class="play-card__img"></div>
+				<img class="play-card__img" src="http://placehold.it/35">
 			</div>
 
-			<div class="play-card--red"></div>
-			<div class="play-card--blue"></div>
+			<div class="play-card" draggable="true" ondragstart="console.log(1)">
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--left"></div>
+				<img class="play-card__img" src="http://placehold.it/35">
+			</div>
+
+			<div class="play-card" draggable="true" ondragstart="console.log(1)">
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--left"></div>
+				<img class="play-card__img" src="http://placehold.it/35">
+			</div>
+
+			<div class="play-card" draggable="true" ondragstart="console.log(1)">
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--left"></div>
+				<img class="play-card__img" src="http://placehold.it/35">
+			</div>
+
+			<div class="play-card" draggable="true" ondragstart="console.log(1)">
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--top-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-right"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--bottom-left"></div>
+				<div class="play-card__attack-triangle play-card__attack-triangle--left"></div>
+				<img class="play-card__img" src="http://placehold.it/35">
+			</div>
 			
 		</div>
-		<div class="layout__col">
+		<div class="layout__game-field">
+			
+			<!-- should i use table here or should i not -->
+			<div class="game-field">
+				<div class="game-field__row">
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+				</div>
+				<div class="game-field__row">
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+				</div>
+				<div class="game-field__row">
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+					<div class="game-field__cell">
+						<div class="game-field__slot" ondrop="console.log(event)" ondragover="allowDrop(event)"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="layout__opponent">
 			
 		</div>
-		<div class="layout__col">
-			
-		</div>
-	</div>
+
+
 
 
 
 	
 </main>
 
-<footer></footer>
+<footer class="page-footer">
+	Humble footer here.
+</footer>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
 
 </body>
 </html>

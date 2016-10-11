@@ -2,6 +2,7 @@
 	position: relative;
 	width: $play-card-w;
 	height: $play-card-h;
+	margin: 5px 0;
 
 	border: $play-card-bd;
 	border-radius: $play-card-radius;
@@ -9,13 +10,20 @@
 	cursor: move;
 
 	&--red {
-
+		border-color: red;
 	}
 
 	&--blue {
-
+		border-color: blue;
 	}
 
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+	}
 
 	&__attack-triangle {
 		position: absolute;
@@ -35,13 +43,13 @@
 		}
 
 		&::before {
-			border-color: transparent black transparent transparent;
+			border-color: transparent grey transparent transparent;
 			border-width: $play-card-triangle-size $play-card-triangle-size $play-card-triangle-size 0;
 			filter: blur(4px);
 		}
 
 		&::after {
-			border-color: transparent lightgrey transparent transparent;
+			border-color: transparent #FFF500 transparent transparent;
 			border-width: $play-card-triangle-size $play-card-triangle-size $play-card-triangle-size 0;
 			filter: blur(1px);
 		}

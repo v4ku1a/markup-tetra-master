@@ -1,17 +1,54 @@
 
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+main {
+	flex: 1;
+}
+
 .layout {
 	
 	&__container {
-		max-width: 1200px;
+		width: 1200px;
+		max-width: 100%;
 		margin: 0 auto;
 		padding: 20px;
-	}
-
-	&__row {
 		display: flex;
 	}
 
-	&__col {
-	    flex: 1 1 0px;
+	@media (min-width: 1200px) {
+
+		&__player {
+			width: $layout-player-w;
+			height: $layout-player-h;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: space-around;
+			align-items: center;
+		}
+
+		&__opponent {
+			width: $layout-opponent-w;
+		}
+
+		&__game-field {
+			flex: 1;
+		}
+	}
+
+	@media (max-width: 1199px) {
+		
+		&__opponent {
+			display: none;
+		}
 	}
 }
